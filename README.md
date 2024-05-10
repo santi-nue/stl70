@@ -1,6 +1,8 @@
 # BlazorWASMwGithubPages
 This is a template of a Blazor WebAssembly project with Github Actions to deploy the Blazor WASM site to Github Pages
 
+You can access the page here: [https://reusabletemplates.github.io/BlazorWASMwGithubPages](https://reusabletemplates.github.io/BlazorWASMwGithubPages)
+
 ## Specific NuGet packages used
 - [Publish SPA for GitHub Pages - MSBuild Task & Scripts (designed for Blazor WebAssembly)](https://www.nuget.org/packages/PublishSPAforGitHubPages.Build)
 
