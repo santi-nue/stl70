@@ -10,7 +10,7 @@ You can access the page here: [https://reusabletemplates.github.io/BlazorWASMwGi
 3. Clone the repository and create your Blazor project
 4. Add NuGet library `PublishSPAforGitHubPages.Build`
 5. Add GitHub Action, you can take mine ;-) Remember to adjust these places for your project:
-  - `run: dotnet publish **MyBlazorApp/MyBlazorApp.sln** -c:Release -o:publish -p:GHPages=true` (change the bold text to fit your project)
+  - `run: dotnet publish {{relative path to your sln file}} -c:Release -o:publish -p:GHPages=true`
 
 ## Specific NuGet packages used
 - [Publish SPA for GitHub Pages - MSBuild Task & Scripts (designed for Blazor WebAssembly)](https://www.nuget.org/packages/PublishSPAforGitHubPages.Build)
