@@ -3,6 +3,15 @@ This is a template of a Blazor WebAssembly project with Github Actions to deploy
 
 You can access the page here: [https://reusabletemplates.github.io/BlazorWASMwGithubPages](https://reusabletemplates.github.io/BlazorWASMwGithubPages)
 
+## Steps to reproduce
+
+1. Create a repository
+2. Create a `gh-pages` branch from master (or whatever you call it, I call it root)
+3. Clone the repository and create your Blazor project
+4. Add NuGet library `PublishSPAforGitHubPages.Build`
+5. Add GitHub Action, you can take mine ;-) Remember to adjust these places for your project:
+  - `run: dotnet publish **MyBlazorApp/MyBlazorApp.sln** -c:Release -o:publish -p:GHPages=true` (change the bold text to fit your project)
+
 ## Specific NuGet packages used
 - [Publish SPA for GitHub Pages - MSBuild Task & Scripts (designed for Blazor WebAssembly)](https://www.nuget.org/packages/PublishSPAforGitHubPages.Build)
 
