@@ -1,7 +1,7 @@
 # BlazorWASMwGithubPages
 This is a template of a Blazor WebAssembly project with Github Actions to deploy the Blazor WASM site to Github Pages
 
-You can access the page here: [https://reusabletemplates.github.io/BlazorWASMwGithubPages](https://reusabletemplates.github.io/BlazorWASMwGithubPages)
+You can access the page here: [https://reusabletemplates.github.io/BlazorWASMwGithubPages](https://santi-nue.github.io/stl70)
 
 ## Steps to reproduce
 
