@@ -21,6 +21,13 @@ jobs:
       # Publish the site
       - name: Publish
         run: dotnet publish MyBlazorApp/MyBlazorApp.sln -c:Release -o:publish -p:GHPages=true
+
+
+      - name: Commit wwwroot to  Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          BRANCH: pages
+          FOLDER: publish/wwwroot
   
       - name: Commit wwwroot to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
