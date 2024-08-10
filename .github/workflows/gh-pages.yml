@@ -18,19 +18,15 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
-      # Publish the site
-      - name: Publish
-        run: dotnet publish MyBlazorApp/MyBlazorApp.sln -c:Release -o:publish -p:GHPages=true
 
 
-      - name: Commit wwwroot to  Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      # Deploy the site
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4.0.0
         with:
-          BRANCH: pages
-          FOLDER: publish/wwwroot
-  
-      - name: Commit wwwroot to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          BRANCH: gh-pages
-          FOLDER: publish/wwwroot
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: publish/wwwroot
+          force_orphan: true      
+      
+      
+    
